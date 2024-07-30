@@ -23,6 +23,7 @@ body {
   background-size: contain;
   display: flex;
   justify-content: center;
+  font-family: var(--red-hat);
   align-items: center;
 }
 
@@ -38,7 +39,43 @@ main {
 }
 .content {
   background-color: var(--white);
-  padding: 40px;
+  padding: 40px 48px;
   border-radius: 0px 0px 16px 16px;
+}
+.hero-text {
+  text-align: center;
+}
+.hero-text h1 {
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+.hero-text p {
+  color: var(--desaturated-blue);
+  margin: 20px 0 18px;
+}
+.plan{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 12px;
+  padding: 24px;
+}
+.plan a{
+  color: var(--bright-blue);
+  font-size: 14px;
+  font-weight: 900;
+}
+.price{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 
+.annual h3{
+  color: var(--dark-blue);
+}
+.annual p{
+  font-size: 14px;
+  color: var(--desaturated-blue);
 }
