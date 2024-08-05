@@ -25,10 +25,12 @@ body {
   justify-content: center;
   font-family: var(--red-hat);
   align-items: center;
+  padding: 50px 0;
 }
 
 main {
   width: 450px;
+  max-width: 90%;
   background-color: var(--white);
   border-radius: 16px;
 }
@@ -53,7 +55,7 @@ main {
   color: var(--desaturated-blue);
   margin: 20px 0 18px;
 }
-.plan{
+.plan {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,21 +63,57 @@ main {
   border-radius: 12px;
   padding: 24px;
 }
-.plan a{
+.plan a {
   color: var(--bright-blue);
   font-size: 14px;
   font-weight: 900;
 }
-.price{
+.price {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.annual h3{
+.annual h3 {
   color: var(--dark-blue);
 }
-.annual p{
+.annual p {
   font-size: 14px;
   color: var(--desaturated-blue);
+}
+
+.btn {
+  margin-top: 24px;
+}
+.btn button {
+  width: 100%;
+  padding: 16px 8px;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+}
+
+.btn button:first-child {
+  background-color: var(--bright-blue);
+  color: var(--white);
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 1px 19px 56px -14px rgba(56, 41, 224, 0.75);
+}
+
+.btn button:nth-child(2) {
+  background-color: transparent;
+  color: var(--desaturated-blue);
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    padding: 40px 30px;
+  }
+  .plan {
+    padding: 18px;
+  }
+  .annual h3 {
+    font-size: 16px;
+  }
 }
